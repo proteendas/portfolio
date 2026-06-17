@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROTEEN DAS — Full-Stack Dev & AI Enthusiast</title>
+    <meta
+      name="description"
+      content="Proteen Das — Full-Stack Developer, Frontend Specialist & AI Enthusiast building high-performance web experiences."
+    />
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/thumbnails/070/913/599/small/a-3d-web-browser-icon-with-code-symbols-isolated-on-transparent-background-png.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo:wght@400;500;600;700;900&family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-logo">PROTEEN!</div>
+      <div class="loader-bar"><i id="loadFill"></i></div>
+      <div class="loader-status" id="loadStatus">COMPILING COMPONENTS…</div>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-label" id="cursorLabel"></div>
+
+    <!-- TEXTURE -->
+    <div class="halftone"></div>
+    <div class="halftone-accent"></div>
+    <div class="progress"><i id="progFill"></i></div>
+
+    <!-- HUD -->
+    <div class="hud hud-tl">
+      DEV // <b>PROTEEN.DEV</b><br />NODE: BENGALURU-IN
+    </div>
+    <div class="hud hud-br">SCROLL <b id="hudScroll">000%</b></div>
+
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo hoverable" href="#top">PROTEEN<span>.DEV</span></a>
+      <div class="nav-links">
+        <a class="hoverable" href="#about">About</a>
+        <a class="hoverable" href="#skills">Skills</a>
+        <a class="hoverable" href="#experience">Experience</a>
+        <a class="hoverable" href="#projects">Projects</a>
+        <a class="hoverable" href="#certifications">Certs</a>
+        <a class="hoverable" href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button
+          class="dark-toggle hoverable"
+          id="darkToggle"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+        <a
+          class="nav-cta hoverable"
+          href="https://drive.google.com/file/d/18xFBETmmC8b-yfk7OXfO72Gyfc2AwLBu/view?usp=sharing"
+          target="_blank"
+          rel="noopener"
+          >Resume ↗</a
+        >
+      </div>
+    </nav>
+
+    <main id="top">
+      <div class="skew-wrap">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-tag" id="scrambleTag">
+            // FULLSTACK DEV · FRONTEND SPECIALIST · AI ENTHUSIAST — BENGALURU,
+            INDIA
+          </div>
+          <div class="h1-3d" id="h13d">
+            <h1>
+              <span class="row"><span class="t3d-ink">I BUILD</span></span>
+              <span class="row"><span class="t3d-blue">THE WEB.</span></span>
+              <span class="row"><span class="t3d-red">AT SCALE.</span></span>
+            </h1>
+          </div>
+          <p class="hero-sub">
+            Hey, I'm <b>Proteen Das</b> — Fullstack Developer & Frontend
+            Specialist. I build
+            <b>responsive, high-performance enterprise websites</b> used by
+            global brands, and I'm passionate about
+            <b>AI, chatbots, and LLMs</b>.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary hoverable magnetic"
+              data-label="HIRE ME!"
+              href="#contact"
+              ><span class="dot"></span> Get In Touch</a
+            >
+            <a
+              class="btn btn-ghost hoverable magnetic"
+              data-label="SEE WORK!"
+              href="#projects"
+              >View Projects ↓</a
+            >
+          </div>
+          <div class="hero-meta">
+            <div>EST. 2024 — MINDSPRINT DIGITAL</div>
+            <div class="scroll-hint">
+              <div class="wheel"></div>
+              SCROLL DOWN
+            </div>
+            <div>BUILD · SHIP · ITERATE</div>
+          </div>
+        </section>
+
+        <!-- MARQUEES -->
+        <div class="marquee m-fwd">
+          <div class="marquee-track">
+            <span>React</span><span class="hl">★</span><span>Next.js</span
+            ><span class="hl">★</span><span>AEM</span><span class="hl">★</span
+            ><span>Contentful</span><span class="hl">★</span
+            ><span>TypeScript</span><span class="hl">★</span><span>Flutter</span
+            ><span class="hl">★</span><span>Adobe EDS</span
+            ><span class="hl">★</span> <span>React</span
+            ><span class="hl">★</span><span>Next.js</span
+            ><span class="hl">★</span><span>AEM</span><span class="hl">★</span
+            ><span>Contentful</span><span class="hl">★</span
+            ><span>TypeScript</span><span class="hl">★</span><span>Flutter</span
+            ><span class="hl">★</span><span>Adobe EDS</span
+            ><span class="hl">★</span>
+          </div>
+        </div>
+        <div class="marquee m-rev m2">
+          <div class="marquee-track">
+            <span>Build</span><span>·</span><span>Ship</span><span>·</span
+            ><span>Optimise</span><span>·</span><span>Scale</span><span>·</span
+            ><span>Repeat</span><span>·</span><span>Build</span><span>·</span
+            ><span>Ship</span><span>·</span><span>Optimise</span><span>·</span
+            ><span>Scale</span><span>·</span><span>Repeat</span><span>·</span>
+            <span>Build</span><span>·</span><span>Ship</span><span>·</span
+            ><span>Optimise</span><span>·</span><span>Scale</span><span>·</span
+            ><span>Repeat</span><span>·</span><span>Build</span><span>·</span
+            ><span>Ship</span><span>·</span><span>Optimise</span><span>·</span
+            ><span>Scale</span><span>·</span><span>Repeat</span><span>·</span>
+          </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section id="about">
+          <div class="eyebrow reveal">01 — Who is Proteen</div>
+          <h2 class="h2 flip3d">
+            RESULTS-DRIVEN <span class="accent-b">FULLSTACK</span> ENGINEER
+          </h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="reveal">
+                I'm a software developer building
+                <b>responsive, high-performance web and mobile applications</b>
+                using JavaScript, TypeScript, React, Next.js, Flutter, and
+                modern headless CMS platforms — AEM, Adobe EDS, Contentful, and
+                Strapi.
+              </p>
+              <p class="reveal">
+                I've led end-to-end delivery of
+                <b>enterprise corporate websites</b> for <b>global brands</b> —
+                owning everything from architecture to production deployment in
+                agile cross-functional teams.
+              </p>
+              <p class="quote reveal">
+                "Great interfaces ship when performance, accessibility, and
+                design thinking converge."
+              </p>
+            </div>
+            <div class="stats reveal">
+              <div class="stat">
+                <div class="num" data-count="6">0</div>
+                <div class="lbl">Certifications</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="10">0</div>
+                <div class="lbl">Technologies</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="4">0</div>
+                <div class="lbl">Major Projects</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="4">0</div>
+                <div class="lbl">Companies</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+          <div class="eyebrow reveal">02 — Tech Stack</div>
+          <h2 class="h2 flip3d">
+            TOOLS I <span class="accent">SHIP</span> WITH
+          </h2>
+          <div class="skills-grid">
+            <div class="skill-cat reveal">
+              <div class="cat-badge">Frontend</div>
+              <h4>Languages & UI</h4>
+              <div class="chip-row">
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="skill-cat reveal">
+              <div class="cat-badge">Frameworks</div>
+              <h4>Libraries & Runtimes</h4>
+              <div class="chip-row">
+                <span class="chip">React.js</span>
+                <span class="chip">Next.js</span>
+                <span class="chip">Flutter</span>
+                <span class="chip">PHP</span>
+                <span class="chip">Dart</span>
+              </div>
+            </div>
+            <div class="skill-cat reveal">
+              <div class="cat-badge">CMS</div>
+              <h4>Content Platforms</h4>
+              <div class="chip-row">
+                <span class="chip">AEM</span>
+                <span class="chip">Adobe EDS</span>
+                <span class="chip">Contentful</span>
+                <span class="chip">Strapi</span>
+              </div>
+            </div>
+            <div class="skill-cat reveal">
+              <div class="cat-badge">Cloud & Backend</div>
+              <h4>Infra & Data</h4>
+              <div class="chip-row">
+                <span class="chip">Azure</span>
+                <span class="chip">Oracle Cloud</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">Spring Boot</span>
+              </div>
+            </div>
+            <div class="skill-cat reveal">
+              <div class="cat-badge">AI & Other</div>
+              <h4>AI / Tooling</h4>
+              <div class="chip-row">
+                <span class="chip">LLMs</span>
+                <span class="chip">Chatbots</span>
+                <span class="chip">LangChain</span>
+                <span class="chip">Git / GitHub</span>
+                <span class="chip">Agile</span>
+                <span class="chip">Java</span>
+                <span class="chip">Python</span>
+                <span class="chip">C</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+          <div class="eyebrow reveal">03 — Work Experience</div>
+          <h2 class="h2 flip3d">
+            WHERE I'VE <span class="accent-b">SHIPPED</span> THINGS
+          </h2>
+          <div class="exp-list">
+            <div class="exp-item reveal">
+              <div>
+                <div class="exp-date">Aug 2024<br />— Present</div>
+                <div class="exp-company">Mindsprint Digital</div>
+              </div>
+              <div class="exp-body">
+                <h4>Junior Software Engineer</h4>
+                <ul>
+                  <li>
+                    Led end-to-end development of responsive corporate websites
+                    for global enterprises — Olam Agri, ofi, and Mindsprint —
+                    using Vanilla JS, React, Next.js, AEM, Adobe EDS,
+                    Contentful, and Strapi.
+                  </li>
+                  <li>
+                    Designed front-end code architecture and project structure
+                    from scratch: reusable components, routing, CMS integrations
+                    aligned with performance and scalability best practices.
+                  </li>
+                  <li>
+                    Developed multiple POCs to validate new features,
+                    third-party integrations, and content workflows across CMS
+                    and UI layers.
+                  </li>
+                  <li>
+                    Independently owned the lifecycle from local development to
+                    production deployment, coordinating with designers, product
+                    owners, and backend teams.
+                  </li>
+                </ul>
+                <div class="chip-row" style="margin-top: 14px">
+                  <span class="chip">React</span
+                  ><span class="chip">Next.js</span><span class="chip">AEM</span
+                  ><span class="chip">Contentful</span
+                  ><span class="chip">Adobe EDS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div>
+                <div class="exp-date">Jan 2024<br />— Jul 2024</div>
+                <div class="exp-company">Mindsprint Digital</div>
+              </div>
+              <div class="exp-body">
+                <h4>Junior Software Engineer Trainee</h4>
+                <ul>
+                  <li>
+                    Trained in enterprise-level web development practices and
+                    modern headless CMS platforms.
+                  </li>
+                  <li>
+                    Contributed to live client projects while learning
+                    production deployment workflows and agile collaboration.
+                  </li>
+                </ul>
+                <div class="chip-row" style="margin-top: 14px">
+                  <span class="chip">Vanilla JS</span
+                  ><span class="chip">AEM</span><span class="chip">Strapi</span
+                  ><span class="chip">Agile</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div>
+                <div class="exp-date">Dec 2023<br />— Jan 2024</div>
+                <div class="exp-company">Abybaby Digital</div>
+              </div>
+              <div class="exp-body">
+                <h4>Flutter Developer</h4>
+                <ul>
+                  <li>
+                    Worked on an E-Commerce mobile application built in Flutter,
+                    implementing local device storage of user information synced
+                    from server.
+                  </li>
+                </ul>
+                <div class="chip-row" style="margin-top: 14px">
+                  <span class="chip">Flutter</span><span class="chip">Dart</span
+                  ><span class="chip">Local Storage</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div>
+                <div class="exp-date">Sept 2023<br />— Dec 2023</div>
+                <div class="exp-company">Netfotech Solutions</div>
+              </div>
+              <div class="exp-body">
+                <h4>Software Engineer Trainee</h4>
+                <ul>
+                  <li>
+                    Developed POCs for a Road Safety & Parking Assistance app
+                    and a Learning Management System using Flutter, Firebase,
+                    and LangChain.
+                  </li>
+                  <li>
+                    Contributed as UI Designer alongside engineering
+                    responsibilities.
+                  </li>
+                </ul>
+                <div class="chip-row" style="margin-top: 14px">
+                  <span class="chip">Flutter</span
+                  ><span class="chip">Firebase</span
+                  ><span class="chip">LangChain</span
+                  ><span class="chip">UI Design</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-item reveal">
+              <div>
+                <div class="exp-date">May 2023<br />— Aug 2023</div>
+                <div class="exp-company">Meta XR</div>
+              </div>
+              <div class="exp-body">
+                <h4>Full Stack Developer</h4>
+                <ul>
+                  <li>
+                    Led the Mobile App Development team, building a fully
+                    functional VR mobile application from scratch using Flutter,
+                    Firebase, and Unity.
+                  </li>
+                </ul>
+                <div class="chip-row" style="margin-top: 14px">
+                  <span class="chip">Flutter</span
+                  ><span class="chip">Firebase</span
+                  ><span class="chip">Unity</span><span class="chip">VR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+          <div class="eyebrow reveal">04 — Projects</div>
+          <h2 class="h2 flip3d">
+            THINGS I'VE <span class="accent">BUILT</span>
+          </h2>
+          <div class="cards">
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #01</div>
+              <div class="glyph">🛒</div>
+              <h3>E-Commerce Website</h3>
+              <div class="card-meta">Full-Stack · Role-Based Auth</div>
+              <p>
+                Full-stack e-commerce app with React.js, Spring Boot & MySQL.
+                Features role-based authentication for Admin & Customer, product
+                management, cart, order history, and delivery tracking flows.
+              </p>
+              <div class="chip-row">
+                <span class="chip">React.js</span
+                ><span class="chip">Spring Boot</span
+                ><span class="chip">MySQL</span>
+              </div>
+              <a
+                class="card-link hoverable"
+                href="https://github.com/Tabskills/shipshop.com"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub ↗</a
+              >
+            </div>
+
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #02</div>
+              <div class="glyph">💼</div>
+              <h3>Online Job Portal</h3>
+              <div class="card-meta">Multi-Role Dashboards</div>
+              <p>
+                Job portal with role-based dashboards for Admin, Employer, and
+                Jobseeker. Features job posting, application management, and
+                candidate screening with admin-controlled approval workflows.
+              </p>
+              <div class="chip-row">
+                <span class="chip">PHP</span><span class="chip">MySQL</span
+                ><span class="chip">JavaScript</span>
+              </div>
+              <a
+                class="card-link hoverable"
+                href="https://github.com/proteendas/JobsConnect"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub ↗</a
+              >
+            </div>
+
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #03</div>
+              <div class="glyph">🎤</div>
+              <h3>TEDxHITK 2023</h3>
+              <div class="card-meta">Event Website · Tech Head</div>
+              <p>
+                Designed and developed the official website for TEDxHITK 2023 as
+                Tech Head — a full TED event independently organised by the
+                college, featuring responsive design and interactive elements.
+              </p>
+              <div class="chip-row">
+                <span class="chip">HTML</span><span class="chip">CSS</span
+                ><span class="chip">JavaScript</span>
+              </div>
+              <a
+                class="card-link hoverable"
+                href="https://github.com/proteendas/TEDxHITK23"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub ↗</a
+              >
+            </div>
+
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #04</div>
+              <div class="glyph">🏥</div>
+              <h3>Hospital Management</h3>
+              <div class="card-meta">Full-Stack · Auth System</div>
+              <p>
+                Full-stack web application for patient appointment booking and
+                doctor prescription management with secure authentication and
+                role-based access control.
+              </p>
+              <div class="chip-row">
+                <span class="chip">PHP</span><span class="chip">MySQL</span
+                ><span class="chip">JavaScript</span>
+              </div>
+              <a
+                class="card-link hoverable"
+                href="https://github.com/proteendas/HospitalManagement"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub ↗</a
+              >
+            </div>
+
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #05</div>
+              <div class="glyph">🧬</div>
+              <h3>Cancer Detection AI</h3>
+              <div class="card-meta">Machine Learning · Research</div>
+              <p>
+                Comparative ML study for early breast cancer detection from
+                mammograms — implementing Random Forest with Genetic Algorithm
+                and Multi-Layer Perceptron (MLP) for accuracy benchmarking.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Python</span
+                ><span class="chip">Random Forest</span
+                ><span class="chip">MLP</span>
+              </div>
+            </div>
+
+            <div class="card hoverable reveal">
+              <div class="badge">ISSUE #06</div>
+              <div class="glyph">🎓</div>
+              <h3>Student Management</h3>
+              <div class="card-meta">Admin System · Optimised DB</div>
+              <p>
+                Comprehensive system for student registration and administrative
+                management with optimised database queries for fast lookup and
+                reporting across large datasets.
+              </p>
+              <div class="chip-row">
+                <span class="chip">PHP</span><span class="chip">MySQL</span
+                ><span class="chip">JavaScript</span>
+              </div>
+              <a
+                class="card-link hoverable"
+                href="https://github.com/proteendas/StudentManagement"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub ↗</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+          <div class="eyebrow reveal">05 — Education</div>
+          <h2 class="h2 flip3d">
+            BUILT ON A <span class="accent-b">STRONG</span> FOUNDATION
+          </h2>
+          <div class="edu-block reveal">
+            <div class="edu-degree">
+              Bachelor of Technology<br />Computer Science & Business Systems
+            </div>
+            <div class="edu-school">
+              Heritage Institute of Technology, Kolkata
+            </div>
+            <div class="edu-meta">Nov 2020 — June 2024</div>
+            <span class="edu-gpa">9.08</span>
+            <div class="edu-gpa-label">DGPA — Top Quartile</div>
+            <div class="chip-row" style="margin-top: 20px">
+              <span class="chip">DSA</span><span class="chip">DBMS</span
+              ><span class="chip">OOPs</span><span class="chip">OS</span
+              ><span class="chip">Computer Networks</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+          <div class="eyebrow reveal">06 — Certifications</div>
+          <h2 class="h2 flip3d">
+            CERTIFIED <span class="accent">ACROSS</span> THE STACK
+          </h2>
+          <div class="cert-grid">
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Oracle · Oct 2025</div>
+              <div class="cert-name">
+                Oracle Cloud Infrastructure 2025 Certified Generative AI
+                Professional
+              </div>
+              <a
+                class="cert-verify hoverable"
+                href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E01E34398E310915C1D483B2FE2EE90C330A8F4D583C462816EA3FF01DF06990"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Microsoft · Jun 2025</div>
+              <div class="cert-name">
+                Microsoft Certified: Azure Developer Associate
+              </div>
+              <a
+                class="cert-verify hoverable"
+                href="http://learn.microsoft.com/en-us/users/proteendas/credentials/9a6f4df6c059a033"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Contentful · May 2025</div>
+              <div class="cert-name">Contentful Certified Professional</div>
+              <a
+                class="cert-verify hoverable"
+                href="https://www.credly.com/badges/002a54d2-d5bc-44cc-b44c-a20155ff16a6"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Contentful · May 2025</div>
+              <div class="cert-name">Contentful Certified Content Manager</div>
+              <a
+                class="cert-verify hoverable"
+                href="https://www.credly.com/badges/2f42ffa1-9380-4983-9841-e078215791d2"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Microsoft · Apr 2025</div>
+              <div class="cert-name">
+                Microsoft Certified: Azure Fundamentals
+              </div>
+              <a
+                class="cert-verify hoverable"
+                href="https://learn.microsoft.com/en-us/users/proteendas/credentials/a38510d233df142d"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+
+            <div class="cert-card reveal">
+              <div class="cert-issuer">Adobe · Jan 2025</div>
+              <div class="cert-name">
+                Adobe Certified Professional — AEM Developer
+              </div>
+              <a
+                class="cert-verify hoverable"
+                href="https://certification.adobe.com/credential/verify/91abb3fc-cf63-11ef-8f8b-42010a40001c"
+                target="_blank"
+                rel="noopener"
+                >Verify ↗</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+          <div class="eyebrow reveal" style="justify-content: center">
+            07 — Let's Connect
+          </div>
+          <h2 class="h2 flip3d">
+            GOT A <span class="accent">PROJECT</span> IN MIND?
+          </h2>
+          <p
+            class="hero-sub reveal"
+            style="opacity: 1; margin: 26px auto 0; text-align: center"
+          >
+            Whether it's an enterprise web build, a CMS integration, or an
+            AI-powered app — <b>let's talk.</b>
+          </p>
+          <div class="mega-cta reveal">
+            <a
+              class="btn btn-primary hoverable magnetic"
+              data-label="SEND MAIL!"
+              href="mailto:prot.das15@gmail.com"
+              ><span class="dot"></span> prot.das15@gmail.com</a
+            >
+          </div>
+          <div class="social-row reveal">
+            <a
+              class="social gh hoverable"
+              href="https://github.com/proteendas"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+              @proteendas
+            </a>
+            <a
+              class="social li hoverable"
+              href="https://linkedin.com/in/proteen"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              in/proteen
+            </a>
+            <a class="social mail hoverable" href="mailto:prot.das15@gmail.com">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 7 10-7" />
+              </svg>
+              Email Me
+            </a>
+            <a
+              class="social portfolio hoverable"
+              href="#top"
+              target="_self"
+              rel="noopener"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+              Portfolio Site ↗
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div>© 2026 PROTEEN DAS — FULLSTACK ENGINEER</div>
+      <div>BENGALURU, INDIA · BUILT WITH 💻 &amp; ⚡</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
