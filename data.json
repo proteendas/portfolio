@@ -143,6 +143,15 @@
       "liveUrl": "https://sagepilot-erp.vercel.app/"
     },
     {
+      "glyph": "💼",
+      "title": "CareerPilot360",
+      "meta": "Full-Stack · Multi-Tenant · HITL · AI · AGENTIC RAG",
+      "description": "A multi-tenant AI job-application assistant. Every AI output is reviewed by a human before use; nothing is auto-submitted to a job board, no LinkedIn account is ever automated, and no resume fact is ever fabricated.",
+      "chips": ["Next.js", "Drizzle ORM", "Auth.js", "Vercel Blob", "AI"],
+      "github": "https://github.com/proteendas/career-pilot-360",
+      "liveUrl": "https://career-pilot-360.vercel.app/"
+    },
+    {
       "glyph": "🗺️",
       "title": "Roamlet",
       "meta": "Android · iOS · GGUF · ON-DEVICE AI · AGENTIC RAG",
