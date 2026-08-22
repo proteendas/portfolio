@@ -1,0 +1,265 @@
+{
+  "meta": {
+    "title": "PROTEEN DAS — Full-Stack Dev & AI Enthusiast",
+    "description": "Proteen Das — Full-Stack Developer, Frontend Specialist & AI Enthusiast building high-performance web experiences.",
+    "resumeUrl": "https://drive.google.com/file/d/18xFBETmmC8b-yfk7OXfO72Gyfc2AwLBu/view?usp=sharing"
+  },
+  "hero": {
+    "tag": "// FULLSTACK DEV · FRONTEND SPECIALIST · AI ENTHUSIAST — BENGALURU, INDIA",
+    "headline": ["I BUILD", "THE WEB.", "AT SCALE."],
+    "headlineClasses": ["t3d-ink", "t3d-blue", "t3d-red"],
+    "sub": "Hey, I'm <b>Proteen Das</b> — Fullstack Developer & Frontend Specialist. I build <b>responsive, high-performance enterprise websites</b> used by global brands, and I'm passionate about <b>AI, chatbots, and LLMs</b>.",
+    "metaLeft": "EST. 2024 — MINDSPRINT DIGITAL",
+    "metaRight": "BUILD · SHIP · ITERATE"
+  },
+  "about": {
+    "paragraphs": [
+      "I'm a software developer building <b>responsive, high-performance web and mobile applications</b> using JavaScript, TypeScript, React, Next.js, Flutter, and modern headless CMS platforms — AEM, Adobe EDS, Contentful, and Strapi.",
+      "I've led end-to-end delivery of <b>enterprise corporate websites</b> for <b>global brands</b> — owning everything from architecture to production deployment in agile cross-functional teams."
+    ],
+    "quote": "\"Great interfaces ship when performance, accessibility, and design thinking converge.\"",
+    "stats": [
+      { "count": 6, "label": "Certifications" },
+      { "count": 10, "label": "Technologies" },
+      { "count": 5, "label": "Major Projects" },
+      { "count": 4, "label": "Companies" }
+    ]
+  },
+  "skills": [
+    {
+      "badge": "Frontend",
+      "heading": "Languages & UI",
+      "chips": ["JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS"]
+    },
+    {
+      "badge": "Frameworks",
+      "heading": "Libraries & Runtimes",
+      "chips": ["React.js", "React Native", "Next.js", "NextAuth.js", "FastAPI", "Flutter", "PHP", "Dart"]
+    },
+    {
+      "badge": "CMS",
+      "heading": "Content Platforms",
+      "chips": ["AEM", "Adobe EDS", "Contentful", "Strapi"]
+    },
+    {
+      "badge": "Cloud & Backend",
+      "heading": "Infra & Data",
+      "chips": ["AWS", "Azure", "Firebase", "PostgreSQL", "MySQL", "PgVector", "VectorDB", "SQLite", "REST APIs", "Spring Boot"]
+    },
+    {
+      "badge": "AI & Other",
+      "heading": "AI / Tooling",
+      "chips": ["LLMs", "Chatbots", "LangChain", "RAG", "Agentic AI", "Git / GitHub", "Git API", "Agile", "Storybook", "Java", "Python", "C"]
+    },
+    {
+      "badge": "Design",
+      "heading": "Design & ML",
+      "chips": ["UI Design", "Machine Learning", "Random Forest", "MLP", "Figma"]
+    }
+  ],
+  "experience": [
+    {
+      "dateStart": "Aug 2024",
+      "dateEnd": "Present",
+      "company": "Mindsprint Digital",
+      "role": "Junior Software Engineer",
+      "bullets": [
+        "Led end-to-end development of responsive corporate websites for global enterprises — Olam Agri, ofi, and Mindsprint — using Vanilla JS, React, Next.js, AEM, Adobe EDS, Contentful, and Strapi.",
+        "Designed front-end code architecture and project structure from scratch: reusable components, routing, CMS integrations aligned with performance and scalability best practices.",
+        "Developed multiple POCs to validate new features, third-party integrations, and content workflows across CMS and UI layers.",
+        "Independently owned the lifecycle from local development to production deployment, coordinating with designers, product owners, and backend teams."
+      ],
+      "chips": ["React", "Next.js", "AEM", "Contentful", "Adobe EDS"]
+    },
+    {
+      "dateStart": "Jan 2024",
+      "dateEnd": "Jul 2024",
+      "company": "Mindsprint Digital",
+      "role": "Junior Software Engineer Trainee",
+      "bullets": [
+        "Trained in enterprise-level web development practices and modern headless CMS platforms.",
+        "Contributed to live client projects while learning production deployment workflows and agile collaboration."
+      ],
+      "chips": ["Vanilla JS", "AEM", "Strapi", "Agile"]
+    },
+    {
+      "dateStart": "Dec 2023",
+      "dateEnd": "Jan 2024",
+      "company": "Abybaby Digital",
+      "role": "Flutter Developer",
+      "bullets": [
+        "Worked on an E-Commerce mobile application built in Flutter, implementing local device storage of user information synced from server."
+      ],
+      "chips": ["Flutter", "Dart", "Local Storage"]
+    },
+    {
+      "dateStart": "Sept 2023",
+      "dateEnd": "Dec 2023",
+      "company": "Netfotech Solutions",
+      "role": "Software Engineer Trainee",
+      "bullets": [
+        "Developed POCs for a Road Safety & Parking Assistance app and a Learning Management System using Flutter, Firebase, and LangChain.",
+        "Contributed as UI Designer alongside engineering responsibilities."
+      ],
+      "chips": ["Flutter", "Firebase", "LangChain", "UI Design"]
+    },
+    {
+      "dateStart": "May 2023",
+      "dateEnd": "Aug 2023",
+      "company": "Meta XR",
+      "role": "Full Stack Developer",
+      "bullets": [
+        "Led the Mobile App Development team, building a fully functional VR mobile application from scratch using Flutter, Firebase, and Unity."
+      ],
+      "chips": ["Flutter", "Firebase", "Unity Integration", "VR"]
+    }
+  ],
+  "projects": [
+    {
+      "glyph": "𝌞",
+      "title": "Ondros CMS",
+      "meta": "Full-Stack · Multi-Tenant · RBAC · CMS · AI",
+      "description": "A Contentful-style open-source headless CMS built with FastAPI, Next.js, and Postgres/PgVector. Multi-tenant spaces & environments, rich content modeling, delivery/preview/management APIs, and a live-preview visual editor with guideline-aware AI.",
+      "chips": ["FastAPI", "Next.js", "Postgres", "PgVector", "AI"],
+      "github": "https://github.com/proteendas/ondros-cms",
+      "liveUrl": "https://ondros-cms-site.vercel.app/"
+    },
+    {
+      "glyph": "🤖",
+      "title": "IgniteAI Studio",
+      "meta": "Full-Stack · Multi-Tenant · RBAC · AI · AGENTIC RAG · NL-to-SQL",
+      "description": "An open-source multi-provider AI workspace for document-grounded chat, content generation, and structured-data querying with RAG, Agentic workflow with GitHub and GMail integration, NL-to-SQL routing, observability, and BYO API keys.",
+      "chips": ["FastAPI", "Next.js", "Postgres", "VectorDB", "AI"],
+      "github": "https://github.com/proteendas/ignite-ai-studio",
+      "liveUrl": "https://ignite-ai-site.vercel.app/"
+    },
+    {
+      "glyph": "📊",
+      "title": "SagePilot ERP",
+      "meta": "Full-Stack · Multi-Tenant · RBAC · AI · AGENTIC RAG",
+      "description": "Intelligent ERP for modern businesses — quotations, tax invoices, proforma invoices, purchase orders, delivery challans, and vendor reconciliation, with correct Indian GST math built in and a built-in AI assistant that understands your organization's data.",
+      "chips": ["Next.js", "NextAuth.js", "Git API", "AI"],
+      "github": "https://github.com/proteendas/sagepilot-erp",
+      "liveUrl": "https://sagepilot-erp.vercel.app/"
+    },
+    {
+      "glyph": "🗺️",
+      "title": "Roamlet",
+      "meta": "Android · iOS · GGUF · ON-DEVICE AI · AGENTIC RAG",
+      "description": "Offline-first travel companion for iOS & Android. Download a city pack, then get grounded AI answers on landmarks, etiquette, phrases & emergencies — fully on-device via llama.cpp, with a rate-limited cloud fallback only when no model is downloaded. Built with React Native, TypeScript & SQLite.",
+      "chips": ["React Native", "TypeScript", "SQLite", "AI"],
+      "github": "https://github.com/proteendas/roamlet",
+      "liveUrl": "https://roamlet-site.vercel.app/"
+    },
+    {
+      "glyph": "🧩",
+      "title": "Operant Design System",
+      "meta": "Docs · Guidelines · Playground · AI Generator · Storybook",
+      "description": "A self-contained design system for AI-assisted workflows and agentic interfaces — copilots, workflow automation, incident triage, research assistants, prompt orchestration, and human-in-the-loop dashboards. Built with semantic design tokens, dark/light themes, and an executable component contract for AI coding agents.",
+      "chips": ["Next.js", "Tailwind CSS", "Storybook", "AI"],
+      "github": "https://github.com/proteendas/operant-design-system",
+      "liveUrl": "https://operant-design-system.vercel.app/"
+    },
+    {
+      "glyph": "🛒",
+      "title": "E-Commerce Website",
+      "meta": "Full-Stack · Role-Based Auth",
+      "description": "Full-stack e-commerce app with React.js, Spring Boot & MySQL. Features role-based authentication for Admin & Customer, product management, cart, order history, and delivery tracking flows.",
+      "chips": ["React.js", "Spring Boot", "MySQL"],
+      "github": "https://github.com/proteendas/shipshop.com"
+    },
+    {
+      "glyph": "💼",
+      "title": "Online Job Portal",
+      "meta": "Multi-Role Dashboards",
+      "description": "Job portal with role-based dashboards for Admin, Employer, and Jobseeker. Features job posting, application management, and candidate screening with admin-controlled approval workflows.",
+      "chips": ["PHP", "MySQL", "JavaScript"],
+      "github": "https://github.com/proteendas/JobsConnect"
+    },
+    {
+      "glyph": "🎤",
+      "title": "TEDxHITK 2023",
+      "meta": "Event Website · Tech Head",
+      "description": "Designed and developed the official website for TEDxHITK 2023 as Tech Head — a full TED event independently organised by the college, featuring responsive design and interactive elements.",
+      "chips": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/proteendas/TEDxHITK23",
+      "liveUrl": "https://tedxhitkolkata.in"
+    },
+    {
+      "glyph": "🏥",
+      "title": "Hospital Management",
+      "meta": "Full-Stack · Auth System",
+      "description": "Full-stack web application for patient appointment booking and doctor prescription management with secure authentication and role-based access control.",
+      "chips": ["PHP", "MySQL", "JavaScript"],
+      "github": "https://github.com/proteendas/HospitalManagement"
+    },
+    {
+      "glyph": "🧬",
+      "title": "Cancer Detection AI",
+      "meta": "Machine Learning · Research",
+      "description": "Comparative ML study for early breast cancer detection from mammograms — implementing Random Forest with Genetic Algorithm and Multi-Layer Perceptron (MLP) for accuracy benchmarking.",
+      "chips": ["Python", "Random Forest", "MLP"]
+    },
+    {
+      "glyph": "🎓",
+      "title": "Student Management",
+      "meta": "Admin System · Optimised DB",
+      "description": "Comprehensive system for student registration and administrative management with optimised database queries for fast lookup and reporting across large datasets.",
+      "chips": ["PHP", "MySQL", "JavaScript"],
+      "github": "https://github.com/proteendas/StudentManagement"
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Technology<br>Computer Science & Business Systems",
+    "school": "Heritage Institute of Technology, Kolkata",
+    "period": "Nov 2020 — June 2024",
+    "gpa": "9.08",
+    "gpaLabel": "DGPA — Top Quartile",
+    "chips": ["DSA", "DBMS", "OOPs", "OS", "Computer Networks"]
+  },
+  "certifications": [
+    {
+      "issuer": "Oracle",
+      "date": "Oct 2025",
+      "name": "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
+      "verifyUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E01E34398E310915C1D483B2FE2EE90C330A8F4D583C462816EA3FF01DF06990"
+    },
+    {
+      "issuer": "Microsoft",
+      "date": "Jun 2025",
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "verifyUrl": "http://learn.microsoft.com/en-us/users/proteendas/credentials/9a6f4df6c059a033"
+    },
+    {
+      "issuer": "Contentful",
+      "date": "May 2025",
+      "name": "Contentful Certified Professional",
+      "verifyUrl": "https://www.credly.com/badges/002a54d2-d5bc-44cc-b44c-a20155ff16a6"
+    },
+    {
+      "issuer": "Contentful",
+      "date": "May 2025",
+      "name": "Contentful Certified Content Manager",
+      "verifyUrl": "https://www.credly.com/badges/2f42ffa1-9380-4983-9841-e078215791d2"
+    },
+    {
+      "issuer": "Microsoft",
+      "date": "Apr 2025",
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "verifyUrl": "https://learn.microsoft.com/en-us/users/proteendas/credentials/a38510d233df142d"
+    },
+    {
+      "issuer": "Adobe",
+      "date": "Jan 2025",
+      "name": "Adobe Certified Professional — AEM Developer",
+      "verifyUrl": "https://certification.adobe.com/credential/verify/91abb3fc-cf63-11ef-8f8b-42010a40001c"
+    }
+  ],
+  "contact": {
+    "email": "prot.das15@gmail.com",
+    "github": "https://github.com/proteendas",
+    "githubHandle": "@proteendas",
+    "linkedin": "https://linkedin.com/in/proteen",
+    "linkedinHandle": "in/proteen"
+  }
+}
