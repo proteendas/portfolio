@@ -170,6 +170,15 @@
       "liveUrl": "https://operant-design-system.vercel.app/"
     },
     {
+      "glyph": "📊",
+      "title": "Cognifina AI",
+      "meta": "Full-Stack · Multi-Tenant · Audit · AI Agents · Fintech",
+      "description": "Deterministic forensic & compliance AI meta-harness running 25 finance/compliance workflows (due diligence, statutory audit, KYC/AML, tax & regulatory checks) via a 6-agent pipeline — numbers computed by statistical engines first, every finding page-cited.",
+      "chips": ["Next.js", "Drizzle ORM", "PostgreSQL", "AI"],
+      "github": "https://github.com/proteendas/cognifina-ai",
+      "liveUrl": "https://cognifina-ai.vercel.app/"
+    },
+    {
       "glyph": "🛒",
       "title": "E-Commerce Website",
       "meta": "Full-Stack · Role-Based Auth",
