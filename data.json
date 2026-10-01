@@ -116,6 +116,24 @@
   ],
   "projects": [
     {
+      "glyph": "🎯",
+      "title": "Sfalma",
+      "meta": "Full-Stack · Multi-Tenant · SSO · Real-Time · Self-Hostable",
+      "description": "A self-hostable, multi-tenant issue tracker in the spirit of Jira: projects and boards, a backlog and sprints, a full issue view with comments, attachments and a changelog, JQL search, dashboards, reports and automation rules — with real-time updates and single sign-on.",
+      "chips": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind 4",
+        "TanStack Query",
+        "FastAPI",
+        "SQLAlchemy 2",
+        "PostgreSQL 17",
+        "Keycloak 26"
+      ],
+      "github": "https://github.com/proteendas/sfalma",
+      "liveUrl": "https://sfalma.vercel.app/"
+    },
+    {
       "glyph": "𝌞",
       "title": "Ondros CMS",
       "meta": "Full-Stack · Multi-Tenant · RBAC · CMS · AI",
