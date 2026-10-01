@@ -49,7 +49,13 @@ function launch() {
     .to(".hero-tag", { opacity: 1, duration: 1 }, 0.5)
     .to(".hero-sub", { opacity: 1, duration: 1 }, 1)
     .to(".hero-actions", { opacity: 1, duration: 1 }, 1.2)
-    .to(".hero-meta", { opacity: 1, duration: 1 }, 1.4);
+    .to(".hero-meta", { opacity: 1, duration: 1 }, 1.4)
+    .set(".hero-avatar", { opacity: 1 }, 0.7)
+    .from("#avatarFloat", { scale: 0.4, rotate: -18, y: 80, duration: 1.2, ease: "back.out(1.7)" }, 0.7)
+    .from(".avatar-bubble", { scale: 0, transformOrigin: "80% 100%", duration: 0.6, ease: "back.out(2.5)" }, 1.5)
+    .from(".avatar-burst", { scale: 0, duration: 0.5, ease: "back.out(3)" }, 1.7)
+    .from(".avatar-caption", { x: -40, opacity: 0, duration: 0.6 }, 1.8)
+    .add(() => gsap.to(".avatar-panel", { y: -14, duration: 2.8, yoyo: true, repeat: -1, ease: "sine.inOut" }));
   scrambleText(document.getElementById("scrambleTag"));
 }
 
@@ -81,6 +87,7 @@ addEventListener("pointermove", (e) => {
   if (reduceMotion) return;
   const x = e.clientX / innerWidth - 0.5, y = e.clientY / innerHeight - 0.5;
   gsap.to(h13d, { rotateY: x * 14, rotateX: -y * 10, duration: 0.8, ease: "power2.out", transformPerspective: 1100 });
+  gsap.to("#heroAvatar", { x: -x * 26, y: -y * 18, rotateY: -x * 10, rotateX: y * 8, duration: 1, ease: "power2.out", transformPerspective: 1200 });
 });
 if (!reduceMotion)
   gsap.to(h13d, { y: -8, duration: 2.6, yoyo: true, repeat: -1, ease: "sine.inOut" });

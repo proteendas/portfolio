@@ -628,6 +628,198 @@ section {
   }
 }
 
+/* ---------- hero avatar panel ---------- */
+.hero-avatar {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: clamp(20px, 6vw, 96px);
+  width: clamp(300px, 31vw, 470px);
+  height: fit-content;
+  margin: auto 0;
+  opacity: 0;
+  z-index: 3;
+}
+.avatar-float {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.avatar-panel {
+  position: relative;
+  border: 4px solid var(--ink);
+  border-radius: 18px;
+  background: var(--paper);
+  padding: 10px;
+  box-shadow:
+    10px 10px 0 var(--ink),
+    10px 10px 0 4px var(--blue);
+  transform: rotate(3deg);
+  transition:
+    transform 0.35s,
+    box-shadow 0.35s;
+}
+.avatar-panel::before {
+  content: "";
+  position: absolute;
+  inset: -26px -30px auto auto;
+  width: 120px;
+  height: 120px;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(var(--red) 2px, transparent 2.6px);
+  background-size: 10px 10px;
+  opacity: 0.55;
+}
+.avatar-panel:hover {
+  transform: rotate(0deg) translate(-4px, -4px);
+  box-shadow:
+    16px 16px 0 var(--ink),
+    16px 16px 0 4px var(--blue);
+}
+.avatar-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+}
+.avatar-issue {
+  position: absolute;
+  top: -4px;
+  right: 30px;
+  z-index: 2;
+  font-family: "Bangers", cursive;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  background: var(--red);
+  color: #fff;
+  border: 3px solid var(--ink);
+  border-top: none;
+  padding: 6px 12px;
+  border-radius: 0 0 10px 10px;
+}
+.avatar-bubble {
+  position: absolute;
+  top: -58px;
+  left: -64px;
+  z-index: 4;
+  font-family: "Bangers", cursive;
+  font-size: clamp(17px, 1.6vw, 22px);
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #15151c;
+  background: #fff;
+  border: 3px solid #15151c;
+  border-radius: 50%;
+  padding: 20px 26px;
+  box-shadow: 5px 5px 0 #15151c;
+  transform: rotate(-8deg);
+}
+.avatar-bubble::before,
+.avatar-bubble::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.avatar-bubble::before {
+  bottom: -26px;
+  right: 34px;
+  border-width: 26px 6px 0 18px;
+  border-color: #15151c transparent transparent transparent;
+}
+.avatar-bubble::after {
+  bottom: -18px;
+  right: 38px;
+  border-width: 20px 4px 0 12px;
+  border-color: #fff transparent transparent transparent;
+}
+.avatar-burst {
+  position: absolute;
+  bottom: 60px;
+  right: -46px;
+  z-index: 4;
+  width: 104px;
+  height: 104px;
+  display: grid;
+  place-items: center;
+  background: #15151c;
+  clip-path: polygon(50% 0%, 61% 18%, 82% 7%, 79% 30%, 100% 33%, 85% 50%, 100% 67%, 79% 70%, 82% 93%, 61% 82%, 50% 100%, 39% 82%, 18% 93%, 21% 70%, 0% 67%, 15% 50%, 0% 33%, 21% 30%, 18% 7%, 39% 18%);
+  animation: burstPulse 2.4s ease-in-out infinite;
+}
+.avatar-burst::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: var(--yellow);
+  clip-path: inherit;
+}
+.avatar-burst span {
+  position: relative;
+  font-family: "Bangers", cursive;
+  font-size: 26px;
+  letter-spacing: 0.04em;
+  color: var(--red);
+  text-shadow: 2px 2px 0 #15151c;
+  transform: rotate(-10deg);
+}
+@keyframes burstPulse {
+  0%,
+  100% {
+    transform: rotate(12deg) scale(1);
+  }
+  50% {
+    transform: rotate(4deg) scale(1.1);
+  }
+}
+.avatar-caption {
+  position: absolute;
+  bottom: -26px;
+  left: -22px;
+  z-index: 4;
+  font-family: "Bangers", cursive;
+  font-size: clamp(14px, 1.3vw, 17px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #15151c;
+  background: var(--yellow);
+  border: 3px solid #15151c;
+  padding: 8px 14px;
+  box-shadow: 4px 4px 0 #15151c;
+  transform: rotate(-2deg);
+}
+@media (max-width: 1100px) {
+  .avatar-bubble {
+    left: -30px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-avatar {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: min(340px, 78vw);
+    margin: 96px auto 110px;
+  }
+  .avatar-bubble {
+    top: -64px;
+    left: -14px;
+  }
+  .avatar-burst {
+    right: -18px;
+    width: 84px;
+    height: 84px;
+  }
+  .avatar-burst span {
+    font-size: 21px;
+  }
+}
+
 /* ---------- marquees ---------- */
 .marquee {
   position: relative;
@@ -1370,5 +1562,8 @@ footer {
   }
   .hero h1 .row span {
     transform: none !important;
+  }
+  .hero-avatar {
+    opacity: 1 !important;
   }
 }
