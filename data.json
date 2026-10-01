@@ -122,7 +122,6 @@
       "description": "A self-hostable, multi-tenant issue tracker in the spirit of Jira: projects and boards, a backlog and sprints, a full issue view with comments, attachments and a changelog, JQL search, dashboards, reports and automation rules — with real-time updates and single sign-on.",
       "chips": [
         "Next.js 16",
-        "React 19",
         "Tailwind 4",
         "TanStack Query",
         "FastAPI",
