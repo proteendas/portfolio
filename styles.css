@@ -1219,6 +1219,10 @@ section {
   transform: translateZ(20px);
   transition: 0.2s;
 }
+.card .card-link:hover {
+  background: var(--blue);
+  color: #fff;
+}
 .card .card-link-live {
   color: #ed1515;
   border-color: #ed1515;
