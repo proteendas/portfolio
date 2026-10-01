@@ -142,7 +142,7 @@ img {
   transition: opacity 0.3s;
   text-shadow: 1.5px 1.5px 0 var(--paper);
 }
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   .cursor-dot,
   .cursor-ring,
   .cursor-label {
@@ -150,6 +150,9 @@ img {
   }
   body {
     cursor: auto;
+  }
+  .card::before {
+    display: none;
   }
 }
 

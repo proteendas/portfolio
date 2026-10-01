@@ -122,6 +122,7 @@ const ring = document.querySelector(".cursor-ring");
 const label = document.getElementById("cursorLabel");
 let rx = 0, ry = 0;
 addEventListener("pointermove", (e) => {
+  if (e.pointerType !== "mouse") return;
   dot.style.transform = `translate(${e.clientX}px,${e.clientY}px) translate(-50%,-50%)`;
   label.style.left = e.clientX + "px";
   label.style.top = e.clientY + "px";
@@ -294,6 +295,7 @@ function initScrollAnimations() {
   });
   document.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse") return;
       const r = card.getBoundingClientRect();
       const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
       card.style.setProperty("--mx", px * 100 + "%");
