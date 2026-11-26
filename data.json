@@ -156,7 +156,7 @@
     {
       "glyph": "🥽",
       "title": "GroomXR",
-      "meta": "Mobile · VR · AI · Full-Stack · Privacy-first · Free-tier",
+      "meta": "Mobile · VR · AI · Full-Stack · Privacy-first",
       "description": "A practice app for public speaking and interviews: you speak to a virtual panel or audience in a 3D room on your phone, full-screen or in a phone VR headset. An AI panel asks live questions and follow-ups, then a coach scores your pace, filler words and eye contact and explains how you did. Eye contact is tracked with on-device face detection, and the camera feed never leaves the phone. A personal AI coach chat, custom scenarios built from your own material, speech drills, streaks and badges sit on top.",
       "chips": ["Flutter", "Babylon.js", "Supabase", "Postgres RLS", "LangGraph", "ML Kit", "Next.js"],
       "github": "https://github.com/proteendas/groomxr",
