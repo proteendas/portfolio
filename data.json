@@ -174,8 +174,8 @@
     {
       "glyph": "🚗",
       "title": "Road2Walk",
-      "meta": "Mobile · Full-Stack · Realtime · Privacy-first · Free-tier",
-      "description": "A vehicle-safety app: a QR tag on the windscreen lets anyone reach the owner about a problem (wrongly parked, towing, left unlocked, even an accident) without ever seeing each other's phone number. Anonymous chat, emergency contacts with a press-and-hold SOS, an expiry-reminder document vault and live trip sharing sit on top. Access rules live in the database (Postgres RLS), and the whole stack runs on free tiers.",
+      "meta": "Mobile · Full-Stack · Realtime · Privacy-first",
+      "description": "A vehicle-safety app: a QR tag on the windscreen lets anyone reach the owner about a problem (wrongly parked, towing, left unlocked, even an accident) without ever seeing each other's phone number. Anonymous chat, emergency contacts with a press-and-hold SOS, an expiry-reminder document vault and live trip sharing sit on top. Access rules live in the database.",
       "chips": ["Flutter", "Supabase", "Postgres RLS", "Realtime", "Firebase FCM", "Next.js"],
       "github": "https://github.com/proteendas/road2walk",
       "liveUrl": "https://road2walk-site.vercel.app/"
