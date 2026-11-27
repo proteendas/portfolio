@@ -172,6 +172,15 @@
       "liveUrl": "https://ignite-ai-site.vercel.app/"
     },
     {
+      "glyph": "📈",
+      "title": "ArthIQ",
+      "meta": "Mobile · Web · FinTech · AI · On-device ML · Full-Stack",
+      "description": "An app that teaches Indians to invest: 107 interactive lessons, plus a practice terminal for trading NSE/BSE stocks, mutual funds and F&O with virtual money and live prices. Self-learning models on the phone combine price data with news sentiment to spot booming sectors and give per-stock signals, improving after every call. ArthIQ AI, a tutor grounded in the lessons, explains concepts and runs the models on request.",
+      "chips": ["Flutter", "Supabase", "Postgres RLS", "pgvector", "On-device ML", "Next.js"],
+      "github": "https://github.com/proteendas/arthiq",
+      "liveUrl": "https://arthiq-site.vercel.app/"
+    },
+    {
       "glyph": "🚗",
       "title": "Road2Walk",
       "meta": "Mobile · Full-Stack · Realtime · Privacy-first",
